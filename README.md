@@ -2,7 +2,7 @@
 
 Gulpレシピのまとめです。
 
-サンプルを起動する場合、`npm install`を実行してpachage.jsonの内容と同期してください。
+サンプルを起動する場合、`npm install`を実行してpackage.jsonの内容と同期してください。
 
 # Gulp
 
