@@ -11,11 +11,11 @@ Gulpレシピのまとめです。
 
 # Gulpを動かすまで
 
-1. Node.js をインストールしてください。
+Node.js をインストールしてください。
 
 http://nodejs.jp/
 
-2. コンソール環境（コマンドライン）を起動し、gulp-cliをglobal packageとしてインストールします。
+コンソール環境（コマンドライン）を起動し、gulp-cliをglobal packageとしてインストールします。
 
 ```
 gulp install -g gulp-cli
@@ -26,26 +26,28 @@ gulp install -g gulp-cli
 
 # Hello world
 
-1. Gulp Hello world用のディレクトリを作成してください。
-
-2. コンソール環境でHello world用ディレクトリまで移動してください。
-
-3. 以下コマンドを入力して、package.jsonを作成してください。
+Gulp Hello world用のディレクトリを作成してください。名前は何でもよいです。
 
 ```
-npm init
+$ mkdir hello-gulp
+```
+
+コンソール環境でHello world用ディレクトリまで移動し、以下コマンドでpackage.jsonを作成してください。
+
+```
+$ npm init
 ```
 
 このあといくつかの入力を求められます。
 将来、npmのパッケージとして公開するならちゃんとした情報を入力すべきですが、まだ今はEnter連打でも良いでしょう。
 
-4. 現在のディレクトリに、ローカルのgulpパッケージをインストールしてください。
+続いて、現在のディレクトリにnpmのgulpパッケージをローカルインストールしてください。
 
 ```
-npm install --save-dev gulp
+$ npm install --save-dev gulp
 ```
 
-5. 以下のタスク定義スクリプトを「gulpfile.js」としてディレクトリ直下に作成してください。
+以下のタスク定義スクリプトを「gulpfile.js」としてディレクトリ直下に作成してください。
 
 ```
 "use strict";
@@ -57,8 +59,8 @@ gulp.task('hello', function(){
 });
 ```
 
-6. 以下コマンドを叩けば、Gulpが起動します！
+以下コマンドを叩けば、Gulpが起動します！
 
 ```
-gulp hello
+$ gulp hello
 ```
